@@ -4,6 +4,7 @@ import time
 
 all_vacancies = []
 
+
 for page in range(20):
     print(f"Parsing page number {page + 1}")
     url = f"https://api.hh.ru/vacancies?text=Python&per_page=50&page={page}"
