@@ -6,6 +6,3 @@ Small project that scraping 1000 vacancies from [HeadHunter](https://hh.ru) and 
 - Specialties 
 
 **Open website from Github Pages to see visualizations**
-
-
-**Open website from Github Pages to see visualizations**
