@@ -5,8 +5,24 @@
   <title>Jobs analysis</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
-    body { font-family: sans-serif; margin: 40px; }
-    svg { margin-bottom: 40px; }
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    #bubble, #pie, #treemap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    svg {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -17,6 +33,6 @@
   <div id="pie"></div>
   <h2>Work schedule (Bar chart race)</h2>
   <div id="treemap"></div>
-  <script src="/static/js/main.js"></script>
+  <script src="static/js/main.js"></script>
 </body>
 </html>
