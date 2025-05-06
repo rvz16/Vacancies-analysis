@@ -130,7 +130,7 @@ function drawPieChart(data) {
 
 
 function loadData() {
-  fetch("static/data/vacancies_full.json")
+  fetch("vacancies_full.json")
     .then(response => response.json())
     .then(data => {
       if (!data || data.length === 0) {
