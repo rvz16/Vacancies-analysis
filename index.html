@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Jobs Analysis</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .chart-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    svg {
+      display: block;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 6px;
+      font-size: 12px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      pointer-events: none;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vacancies visualisation</h1>
+
+  <h2>Required skills (Bubble Chart)</h2>
+  <div id="bubble" class="chart-container"></div>
+
+  <h2>Experience (Pie Chart)</h2>
+  <div id="pie" class="chart-container"></div>
+
+  <h2>Specialties (Bar Chart)</h2>
+  <div id="treemap" class="chart-container"></div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

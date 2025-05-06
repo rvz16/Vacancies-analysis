@@ -11,7 +11,7 @@ for page in range(20):
     response = requests.get(url)
     
     if response.status_code != 200:
-        print(f"Ошибка {response.status_code} на странице {page}")
+        print(f"Error {response.status_code} in page {page}")
         continue
     
     data = response.json()
@@ -21,7 +21,7 @@ for page in range(20):
         detail_url = f"https://api.hh.ru/vacancies/{vacancy_id}"
         vacancy_resp = requests.get(detail_url)
         if vacancy_resp.status_code != 200:
-            print(f"Ошибка при получении вакансии {vacancy_id}")
+            print(f"Error while getting vacancy {vacancy_id}")
             continue
         
         vacancy_data = vacancy_resp.json()
@@ -48,4 +48,4 @@ for page in range(20):
 with open("vacancies_full.json", "w", encoding="utf-8") as f:
     json.dump(all_vacancies, f, ensure_ascii=False, indent=4)
 
-print("✅ Сохранено", len(all_vacancies), "полных вакансий в 'vacancies_full.json'")
+print("Saved", len(all_vacancies), "full vacancies in 'vacancies_full.json'")
